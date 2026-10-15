@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GOAT Foundry公式サイト。これから生まれるアプリと、その最新情報をお届けします。">
+  <meta name="theme-color" content="#f5f3ed">
+  <title>GOAT Foundry — Ideas, taking shape.</title>
+  <style>
+    :root { color-scheme: light; --paper: #f5f3ed; --ink: #23352e; --muted: #5b675f; --line: #d4d9cf; --accent: #94613b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-underline-offset: .3em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
+    .wrap { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
+    .skip { position: absolute; left: 16px; top: -100px; padding: 12px; background: white; z-index: 2; }
+    .skip:focus { top: 16px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 30px; border-bottom: 1px solid var(--line); }
+    .brand { font-size: 18px; font-weight: 650; letter-spacing: -.04em; }
+    .brand span { display: inline-grid; place-items: center; width: 32px; height: 32px; margin-right: 10px; border: 1px solid var(--ink); border-radius: 50%; font-family: Georgia, serif; font-weight: 400; }
+    .github { font-size: 13px; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    .github:hover { border-color: var(--ink); }
+    .hero { position: relative; padding: 100px 0 92px; overflow: hidden; }
+    .eyebrow { margin: 0 0 28px; color: var(--accent); font-size: 11px; letter-spacing: .22em; font-weight: 650; }
+    h1 { position: relative; margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(58px, 8.8vw, 112px); line-height: 1.04; letter-spacing: -.055em; font-weight: 400; }
+    h1 em { font-weight: 400; }
+    .intro { margin-top: 38px; max-width: 620px; }
+    .intro h2 { margin: 0 0 15px; font-size: clamp(19px, 3vw, 24px); font-weight: 500; letter-spacing: .06em; }
+    .intro p, .info p { color: var(--muted); font-size: 14px; line-height: 2; }
+    .intro p { margin: 0; }
+    .orbit { position: absolute; right: -100px; top: 60px; width: 390px; height: 390px; border: 1px solid var(--line); border-radius: 50%; pointer-events: none; opacity: .65; }
+    .orbit::before, .orbit::after { content: ""; position: absolute; border: 1px solid var(--line); border-radius: 50%; inset: 35px; }
+    .orbit::after { inset: 70px; }
+    .info { display: grid; grid-template-columns: 1.3fr 1fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .info section { padding: 32px 28px 36px; }
+    .info section:first-child { padding-left: 0; }
+    .info section:last-child { padding-right: 0; }
+    .info section + section { border-left: 1px solid var(--line); }
+    .number { font-family: Georgia, serif; font-size: 13px; color: var(--accent); }
+    .info h2 { font-size: 17px; font-weight: 500; margin: 20px 0 10px; }
+    .info p { margin: 0 0 16px; font-size: 13px; }
+    .status { display: inline-block; color: var(--muted); font-size: 11px; letter-spacing: .07em; }
+    .status::before { content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin: 0 7px 2px 0; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 27px 0 32px; font-size: 11px; color: var(--muted); }
+    footer p { margin: 0; }
+    @media (max-width: 700px) {
+      .wrap { width: calc(100% - 40px); }
+      header { padding-block: 22px; }
+      .hero { padding: 68px 0 58px; }
+      .orbit { width: 240px; height: 240px; right: -160px; top: 45px; }
+      .intro { margin-top: 30px; }
+      .info { grid-template-columns: 1fr; }
+      .info section, .info section:first-child, .info section:last-child { padding: 26px 0; }
+      .info section + section { border-left: 0; border-top: 1px solid var(--line); }
+      .info h2 { margin-top: 12px; }
+      footer { flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: no-preference) { a { transition: border-color .2s ease; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span aria-hidden="true">g</span>GOAT Foundry</div>
+      <a class="github" href="https://github.com/GOAT-Foundry" aria-label="GOAT FoundryのGitHub">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="headline">
+        <div class="orbit" aria-hidden="true"></div>
+        <p class="eyebrow">GOAT FOUNDRY / OFFICIAL SITE</p>
+        <h1 id="headline" lang="en">Ideas,<br><em>taking shape.</em></h1>
+        <div class="intro">
+          <h2>アイデアを、かたちに。</h2>
+          <p>GOAT Foundryの公式サイトへようこそ。<br>これから生まれるアプリと、その最新情報をここからお届けします。</p>
+        </div>
+      </section>
+      <div class="info">
+        <section aria-labelledby="apps">
+          <span class="number" aria-hidden="true">01 / APPS</span>
+          <h2 id="apps">アプリ紹介</h2>
+          <p>アプリの特徴や使い方を、<br>公開にあわせてご紹介します。</p>
+          <span class="status">公開準備中</span>
+        </section>
+        <section aria-labelledby="contact">
+          <span class="number" aria-hidden="true">02 / CONTACT</span>
+          <h2 id="contact">お問い合わせ</h2>
+          <p>お問い合わせ窓口は、<br>準備が整い次第ご案内します。</p>
+          <span class="status">準備中</span>
+        </section>
+        <section aria-labelledby="privacy">
+          <span class="number" aria-hidden="true">03 / PRIVACY</span>
+          <h2 id="privacy">プライバシーポリシー</h2>
+          <p>各アプリの情報の取り扱いは、<br>公開時にこちらでご案内します。</p>
+          <span class="status">準備中</span>
+        </section>
+      </div>
+    </main>
+    <footer><p>© 2026 GOAT Foundry</p><p lang="en">A place for ideas to take shape.</p></footer>
+  </div>
+</body>
+</html>
